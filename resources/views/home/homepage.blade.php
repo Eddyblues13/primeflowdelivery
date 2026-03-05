@@ -4,35 +4,38 @@
 
 @section('content')
 <!-- Hero Section with Particles.js -->
-<section class="min-h-[85vh] flex items-center relative overflow-hidden bg-slate-900">
-    <!-- Particles Background -->
-    <div id="particles-js" class="absolute inset-0 z-0"></div>
+<section class="min-h-[90vh] flex items-center relative overflow-hidden bg-slate-50">
+    <!-- Beautiful Hero Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="{{ asset('images/hero-picture.jpg') }}" alt="Global Logistics Shipping" class="w-full h-full object-cover object-center animate-[pulse_20s_ease-in-out_infinite] transform scale-105" />
+    </div>
     
-    <!-- Gradient Overlay for readability -->
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900 z-0"></div>
+    <!-- Light Gradient Overlays for Readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white z-0"></div>
 
-    <div class="hero-content container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-0">
+    <div class="hero-content container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32 lg:py-0">
         <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold text-sm mb-6 border border-indigo-500/20 backdrop-blur-md shadow-sm animate-slide-in">
-                <span class="flex h-2 w-2 rounded-full bg-indigo-400 animate-pulse"></span>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-indigo-600 font-semibold text-sm mb-6 border border-indigo-100 shadow-sm backdrop-blur-md animate-slide-in">
+                <span class="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
                 Next-Generation Global Logistics
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight drop-shadow-lg">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight drop-shadow-sm">
                 Global Logistics, <br/>
-                <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Reimagined.</span>
+                <span class="bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">Reimagined.</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed drop-shadow">
+            <p class="text-lg md:text-xl text-slate-700 mb-10 max-w-2xl leading-relaxed font-medium">
                 Navigating the complexities of global trade with advanced technology, unparalleled speed, and relentless reliability. Your business, delivered seamlessly.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('track') }}"
-                    class="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 shadow-[0_0_20px_rgba(79,70,229,0.4)] hover:shadow-[0_0_30px_rgba(79,70,229,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2 text-lg border border-indigo-500">
+                    class="bg-indigo-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-100 transition-all duration-300 shadow-[0_10px_20px_rgba(79,70,229,0.2)] hover:-translate-y-1 flex items-center justify-center gap-3 text-lg">
                     <i data-feather="compass" class="h-5 w-5"></i>
                     <span>Track Shipment</span>
                 </a>
                 <a href="{{ route('contact') }}#quote-form"
-                    class="bg-white/5 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/10 border border-white/10 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 flex items-center justify-center gap-2 text-lg">
-                    <i data-feather="file-text" class="h-5 w-5 text-indigo-400"></i>
+                    class="bg-white/90 backdrop-blur-md text-indigo-600 font-semibold px-8 py-4 rounded-xl hover:bg-white border border-indigo-100 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 flex items-center justify-center gap-3 text-lg">
+                    <i data-feather="file-text" class="h-5 w-5 text-indigo-500"></i>
                     <span>Request a Quote</span>
                 </a>
             </div>
@@ -62,7 +65,7 @@
                         required>
                 </div>
                 <button type="submit"
-                    class="bg-slate-900 text-white px-8 py-4 rounded-xl hover:bg-indigo-600 transition-colors duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 font-semibold text-lg whitespace-nowrap">
+                    class="bg-indigo-600 text-white px-8 py-4 rounded-xl hover:bg-indigo-700 transition-colors duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 font-semibold text-lg whitespace-nowrap">
                     <i data-feather="search" class="h-5 w-5"></i>
                     <span>Track Now</span>
                 </button>
@@ -191,7 +194,7 @@
             <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
                 <div class="h-60 overflow-hidden relative">
                     <img src="images/air.jpg" alt="Air Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Fastest</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Air Freight</h3>
@@ -217,7 +220,7 @@
             <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col mt-0 md:mt-8 relative">
                 <div class="h-60 overflow-hidden relative">
                     <img src="images/ocean.jpg" alt="Ocean Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Economical</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Ocean Freight</h3>
@@ -243,7 +246,7 @@
             <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
                 <div class="h-60 overflow-hidden relative">
                     <img src="images/road.jpg" alt="Road Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Flexible</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Road Freight</h3>
@@ -276,64 +279,64 @@
 </section>
 
 <!-- NEW: Why Choose Us (Tech/Premium Focus) -->
-<section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+<section class="py-24 bg-indigo-50 text-slate-900 relative overflow-hidden">
     <!-- Dark particles/grid pattern could go here, for now a subtle radial gradient -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/40 via-slate-900 to-slate-900 -z-10"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-100/40 via-indigo-50 to-indigo-50 -z-10"></div>
     
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <span class="text-indigo-400 font-bold tracking-widest uppercase text-xs mb-3 block">The Prime Advantage</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Engineered for absolute reliability.</h2>
-                <p class="text-slate-400 text-lg leading-relaxed mb-10">
+                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">The Prime Advantage</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Engineered for absolute reliability.</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-10">
                     We combine military-grade security protocols with an AI-driven routing engine to guarantee your shipments are protected, optimized, and delivered on schedule, every single time.
                 </p>
                 
                 <div class="space-y-8">
                     <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 shadow-[0_0_15px_rgba(99,102,241,0.2)]">
+                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-indigo-100 flex items-center justify-center text-indigo-600 shadow-lg">
                             <i data-feather="cpu" class="h-7 w-7"></i>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Smart Route Optimization</h4>
-                            <p class="text-slate-400 leading-relaxed text-sm">Our proprietary algorithms analyze weather, traffic, and customs delays to dynamically reroute cargo for maximum speed.</p>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Smart Route Optimization</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">Our proprietary algorithms analyze weather, traffic, and customs delays to dynamically reroute cargo for maximum speed.</p>
                         </div>
                     </div>
                     
                     <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400 shadow-[0_0_15px_rgba(52,211,153,0.1)]">
+                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-emerald-100 flex items-center justify-center text-emerald-600 shadow-lg">
                             <i data-feather="shield" class="h-7 w-7"></i>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Impenetrable Security</h4>
-                            <p class="text-slate-400 leading-relaxed text-sm">24/7 armed escorts for high-value goods, GPS-tamper alerts, and comprehensive insurance coverage.</p>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Impenetrable Security</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">24/7 armed escorts for high-value goods, GPS-tamper alerts, and comprehensive insurance coverage.</p>
                         </div>
                     </div>
 
                     <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.1)]">
+                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-cyan-100 flex items-center justify-center text-cyan-600 shadow-lg">
                             <i data-feather="headphones" class="h-7 w-7"></i>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold mb-2">Dedicated Concierge</h4>
-                            <p class="text-slate-400 leading-relaxed text-sm">Forget automated bots. You get a dedicated logistics expert assigned to your account available around the clock.</p>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Dedicated Concierge</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">Forget automated bots. You get a dedicated logistics expert assigned to your account available around the clock.</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="relative">
-                <div class="rounded-3xl overflow-hidden border border-slate-700 shadow-2xl relative z-10 bg-slate-800">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Warehouse Tech" class="w-full h-auto opacity-80 mix-blend-luminosity">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
+                <div class="rounded-3xl overflow-hidden border border-indigo-100 shadow-2xl relative z-10 bg-white">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Warehouse Tech" class="w-full h-auto opacity-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent opacity-80"></div>
                     
                     <!-- Tech overlay elements -->
-                    <div class="absolute bottom-8 left-8 right-8 bg-slate-900/90 backdrop-blur-xl border border-slate-700 rounded-2xl p-6">
+                    <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-xl border border-indigo-100 rounded-2xl p-6 shadow-xl">
                         <div class="flex justify-between items-center mb-4">
-                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">System Status</span>
-                            <span class="flex items-center gap-2 text-xs font-bold text-emerald-400"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Optimal</span>
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">System Status</span>
+                            <span class="flex items-center gap-2 text-xs font-bold text-emerald-600"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Optimal</span>
                         </div>
-                        <div class="w-full bg-slate-800 rounded-full h-2 mb-2">
+                        <div class="w-full bg-slate-100 rounded-full h-2 mb-2 border border-slate-200">
                             <div class="bg-indigo-500 h-2 rounded-full w-[94%]" style="transition: width 1s ease-in-out;"></div>
                         </div>
                         <p class="text-xs text-slate-500 text-right">94% Fleet Active</p>

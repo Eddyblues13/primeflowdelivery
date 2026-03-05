@@ -312,7 +312,7 @@
                         <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md shadow-indigo-500/20">
                             <i data-feather="package" class="h-6 w-6 text-white"></i>
                         </div>
-                        <span class="text-xl font-bold text-gray-900 tracking-tight">Elite Exchange</span>
+                        <span class="text-xl font-bold text-gray-900 tracking-tight">Primeflow Delivery</span>
                     </a>
                 </div>
 
@@ -422,7 +422,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800">
+    <footer class="bg-white border-t border-gray-200 mt-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Company Info -->
@@ -431,23 +431,23 @@
                         <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
                             <i data-feather="package" class="h-6 w-6 text-white"></i>
                         </div>
-                        <span class="text-xl font-bold text-white">Prime Flow Delivery</span>
+                        <span class="text-xl font-bold text-gray-900">Prime Flow Delivery</span>
                     </div>
                     <p class="text-text-secondary mb-4 max-w-md">
                         Your trusted partner for global logistics and shipping solutions.
                         Delivering excellence across 150+ countries with unmatched reliability.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-text-secondary hover:text-white transition-colors duration-200">
+                        <a href="#" class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">
                             <i data-feather="facebook" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-text-secondary hover:text-white transition-colors duration-200">
+                        <a href="#" class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">
                             <i data-feather="twitter" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-text-secondary hover:text-white transition-colors duration-200">
+                        <a href="#" class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">
                             <i data-feather="linkedin" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-text-secondary hover:text-white transition-colors duration-200">
+                        <a href="#" class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">
                             <i data-feather="instagram" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -455,29 +455,29 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="{{ route('homepage') }}"
-                                class="text-text-secondary hover:text-white transition-colors duration-200">Home</a>
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Home</a>
                         </li>
                         <li><a href="{{ route('about') }}"
-                                class="text-text-secondary hover:text-white transition-colors duration-200">About Us</a>
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">About Us</a>
                         </li>
                         <li><a href="{{ route('services') }}"
-                                class="text-text-secondary hover:text-white transition-colors duration-200">Services</a>
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Services</a>
                         </li>
                         <li><a href="{{ route('track') }}"
-                                class="text-text-secondary hover:text-white transition-colors duration-200">Track
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Track
                                 Shipment</a></li>
                         <li><a href="{{ route('contact') }}"
-                                class="text-text-secondary hover:text-white transition-colors duration-200">Contact</a>
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Contact</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Info</h3>
                     <ul class="space-y-2 text-text-secondary">
                         <li class="flex items-center space-x-2">
                             <i data-feather="phone" class="h-4 w-4"></i>
@@ -485,7 +485,7 @@
                         </li>
                         <li class="flex items-center space-x-2">
                             <i data-feather="mail" class="h-4 w-4"></i>
-                            <span>info@eliteexchange.com</span>
+                            <span>info@primeflowdelivery.com</span>
                         </li>
                         <li class="flex items-center space-x-2">
                             <i data-feather="map-pin" class="h-4 w-4"></i>
@@ -496,19 +496,19 @@
             </div>
 
             <!-- Bottom Bar -->
-            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-text-secondary text-sm">
                     © 2024 Prime Flow Delivery. All rights reserved.
                 </p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#"
-                        class="text-text-secondary hover:text-white text-sm transition-colors duration-200">Privacy
+                        class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Privacy
                         Policy</a>
                     <a href="#"
-                        class="text-text-secondary hover:text-white text-sm transition-colors duration-200">Terms of
+                        class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Terms of
                         Service</a>
                     <a href="#"
-                        class="text-text-secondary hover:text-white text-sm transition-colors duration-200">Cookie
+                        class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Cookie
                         Policy</a>
                 </div>
             </div>
