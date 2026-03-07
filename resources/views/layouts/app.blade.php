@@ -345,6 +345,7 @@
                         Dashboard
                     </a>
                     @else
+                    {{-- 
                     <div class="flex items-center space-x-4">
                         <a href="{{ route('admin.login') }}"
                             class="text-gray-600 font-medium hover:text-indigo-600 transition-colors duration-200">
@@ -355,6 +356,7 @@
                             Register
                         </a>
                     </div>
+                    --}}
                     @endauth
                 </div>
 
@@ -398,6 +400,7 @@
                     Dashboard
                 </a>
                 @else
+                {{-- 
                 <div class="space-y-3 pt-4 border-t border-gray-200">
                     <a href="{{ route('admin.login') }}"
                         class="block text-gray-700 hover:text-indigo-600 transition-colors duration-200 py-3 text-center text-lg font-medium">
@@ -408,6 +411,7 @@
                         Register
                     </a>
                 </div>
+                --}}
                 @endauth
             </div>
         </div>
