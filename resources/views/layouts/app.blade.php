@@ -118,6 +118,7 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             transition: all 0.3s ease;
         }
+
         .card:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
@@ -150,7 +151,7 @@
             border: 1px solid #cbd5e1;
             color: #0f172a;
             transition: all 0.3s ease;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
         }
 
         .form-input:focus,
@@ -309,7 +310,8 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="{{ route('homepage') }}" class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md shadow-indigo-500/20">
+                        <div
+                            class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-md shadow-indigo-500/20">
                             <i data-feather="package" class="h-6 w-6 text-white"></i>
                         </div>
                         <span class="text-xl font-bold text-gray-900 tracking-tight">Primeflow Delivery</span>
@@ -345,7 +347,7 @@
                         Dashboard
                     </a>
                     @else
-                    {{-- 
+                    {{--
                     <div class="flex items-center space-x-4">
                         <a href="{{ route('admin.login') }}"
                             class="text-gray-600 font-medium hover:text-indigo-600 transition-colors duration-200">
@@ -400,7 +402,7 @@
                     Dashboard
                 </a>
                 @else
-                {{-- 
+                {{--
                 <div class="space-y-3 pt-4 border-t border-gray-200">
                     <a href="{{ route('admin.login') }}"
                         class="block text-gray-700 hover:text-indigo-600 transition-colors duration-200 py-3 text-center text-lg font-medium">
@@ -465,7 +467,8 @@
                                 class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Home</a>
                         </li>
                         <li><a href="{{ route('about') }}"
-                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">About Us</a>
+                                class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">About
+                                Us</a>
                         </li>
                         <li><a href="{{ route('services') }}"
                                 class="text-text-secondary hover:text-indigo-600 transition-colors duration-200">Services</a>
@@ -485,7 +488,7 @@
                     <ul class="space-y-2 text-text-secondary">
                         <li class="flex items-center space-x-2">
                             <i data-feather="phone" class="h-4 w-4"></i>
-                            <span>+13154893120</span>
+                            <span>+12344539829</span>
                         </li>
                         <li class="flex items-center space-x-2">
                             <i data-feather="mail" class="h-4 w-4"></i>
@@ -509,7 +512,8 @@
                         class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Privacy
                         Policy</a>
                     <a href="#"
-                        class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Terms of
+                        class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Terms
+                        of
                         Service</a>
                     <a href="#"
                         class="text-text-secondary hover:text-indigo-600 text-sm transition-colors duration-200">Cookie
