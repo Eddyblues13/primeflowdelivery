@@ -489,7 +489,7 @@
                         </li>
                         <li class="flex items-center space-x-2">
                             <i data-feather="mail" class="h-4 w-4"></i>
-                            <span>info@primeflowdelivery.com</span>
+                            <span>support@primeflowdelivery.com</span>
                         </li>
                         <li class="flex items-center space-x-2">
                             <i data-feather="map-pin" class="h-4 w-4"></i>

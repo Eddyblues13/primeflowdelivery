@@ -7,25 +7,30 @@
 <section class="min-h-[90vh] flex items-center relative overflow-hidden bg-slate-50">
     <!-- Beautiful Hero Image -->
     <div class="absolute inset-0 z-0">
-        <img src="{{ asset('images/hero-picture.jpg') }}" alt="Global Logistics Shipping" class="w-full h-full object-cover object-center animate-[pulse_20s_ease-in-out_infinite] transform scale-105" />
+        <img src="{{ asset('images/hero-picture.jpg') }}" alt="Global Logistics Shipping"
+            class="w-full h-full object-cover object-center animate-[pulse_20s_ease-in-out_infinite] transform scale-105" />
     </div>
-    
+
     <!-- Light Gradient Overlays for Readability -->
     <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-0"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white z-0"></div>
 
     <div class="hero-content container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-32 lg:py-0">
         <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-indigo-600 font-semibold text-sm mb-6 border border-indigo-100 shadow-sm backdrop-blur-md animate-slide-in">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-indigo-600 font-semibold text-sm mb-6 border border-indigo-100 shadow-sm backdrop-blur-md animate-slide-in">
                 <span class="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
                 Next-Generation Global Logistics
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight drop-shadow-sm">
-                Global Logistics, <br/>
-                <span class="bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">Reimagined.</span>
+            <h1
+                class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight drop-shadow-sm">
+                Global Logistics, <br />
+                <span
+                    class="bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">Reimagined.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-700 mb-10 max-w-2xl leading-relaxed font-medium">
-                Navigating the complexities of global trade with advanced technology, unparalleled speed, and relentless reliability. Your business, delivered seamlessly.
+                Navigating the complexities of global trade with advanced technology, unparalleled speed, and relentless
+                reliability. Your business, delivered seamlessly.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('track') }}"
@@ -45,16 +50,18 @@
 
 <!-- Tracking Widget - Sleek Glassmorphism -->
 <section class="relative z-20 -mt-16 sm:-mt-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-6 sm:p-10 shadow-[0_20px_50px_rgba(0,_0,_0,_0.1)] border border-white/50 flex flex-col md:flex-row items-center gap-8 isolate relative overflow-hidden">
+    <div
+        class="bg-white/80 backdrop-blur-xl rounded-2xl p-6 sm:p-10 shadow-[0_20px_50px_rgba(0,_0,_0,_0.1)] border border-white/50 flex flex-col md:flex-row items-center gap-8 isolate relative overflow-hidden">
         <!-- Shine effect -->
         <div class="absolute inset-0 bg-gradient-to-tr from-white/40 to-transparent pointer-events-none"></div>
-        
+
         <div class="w-full md:w-1/3 relative z-10">
             <h3 class="text-2xl font-bold text-slate-900 mb-2 tracking-tight">Track Package</h3>
             <p class="text-slate-600 text-sm">Enter your tracking code for real-time AI-powered location updates.</p>
         </div>
         <div class="w-full md:w-2/3 relative z-10">
-            <form action="{{ route('package') }}" method="POST" class="flex flex-col sm:flex-row gap-3 tracking-form w-full relative">
+            <form action="{{ route('package') }}" method="POST"
+                class="flex flex-col sm:flex-row gap-3 tracking-form w-full relative">
                 @csrf
                 <div class="relative flex-grow">
                     <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -71,7 +78,8 @@
                 </button>
             </form>
             @if(session('error'))
-            <div class="mt-4 p-3 bg-red-50/90 border border-red-200 rounded-lg animate-fade-in text-sm flex items-center gap-2 text-red-600 font-medium">
+            <div
+                class="mt-4 p-3 bg-red-50/90 border border-red-200 rounded-lg animate-fade-in text-sm flex items-center gap-2 text-red-600 font-medium">
                 <i data-feather="alert-circle" class="h-4 w-4"></i>
                 {{ session('error') }}
             </div>
@@ -85,31 +93,39 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div class="text-center group">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-100 text-indigo-600 mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-100 text-indigo-600 mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm">
                     <i data-feather="box" class="h-8 w-8"></i>
                 </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">1.2M<span class="text-indigo-600">+</span></h3>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">1.2M<span
+                        class="text-indigo-600">+</span></h3>
                 <p class="text-slate-500 font-medium uppercase tracking-wide text-xs">Parcels Delivered</p>
             </div>
             <div class="text-center group">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6 group-hover:scale-110 group-hover:bg-cyan-600 group-hover:text-white transition-all duration-300 shadow-sm">
                     <i data-feather="globe" class="h-8 w-8"></i>
                 </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">150<span class="text-cyan-600">+</span></h3>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">150<span
+                        class="text-cyan-600">+</span></h3>
                 <p class="text-slate-500 font-medium uppercase tracking-wide text-xs">Countries Reached</p>
             </div>
             <div class="text-center group">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 mb-6 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300 shadow-sm">
                     <i data-feather="clock" class="h-8 w-8"></i>
                 </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">99.7<span class="text-emerald-600">%</span></h3>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">99.7<span
+                        class="text-emerald-600">%</span></h3>
                 <p class="text-slate-500 font-medium uppercase tracking-wide text-xs">On-Time Delivery</p>
             </div>
             <div class="text-center group">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                <div
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-sm">
                     <i data-feather="users" class="h-8 w-8"></i>
                 </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">25k<span class="text-purple-600">+</span></h3>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2 tracking-tight">25k<span
+                        class="text-purple-600">+</span></h3>
                 <p class="text-slate-500 font-medium uppercase tracking-wide text-xs">Satisfied Clients</p>
             </div>
         </div>
@@ -122,51 +138,70 @@
         <div class="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
             <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">Simple Process</span>
             <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">How Prime Flow Works</h2>
-            <p class="mt-6 text-slate-600 text-lg leading-relaxed">Experience logistics as it should be: transparent, efficient, and completely stress-free.</p>
+            <p class="mt-6 text-slate-600 text-lg leading-relaxed">Experience logistics as it should be: transparent,
+                efficient, and completely stress-free.</p>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
             <!-- Connecting Line for Desktop -->
-            <div class="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-indigo-100 via-indigo-300 to-indigo-100 z-0"></div>
+            <div
+                class="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-indigo-100 via-indigo-300 to-indigo-100 z-0">
+            </div>
 
             <!-- Step 1 -->
             <div class="relative z-10 flex flex-col items-center text-center group">
-                <div class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
+                <div
+                    class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
                     <i data-feather="edit-3" class="h-10 w-10"></i>
                 </div>
-                <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">1</div>
+                <div
+                    class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">
+                    1</div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">Request a Quote</h4>
-                <p class="text-slate-500 text-sm leading-relaxed">Provide your cargo details and destination. We instantly calculate the best route and price.</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Provide your cargo details and destination. We
+                    instantly calculate the best route and price.</p>
             </div>
 
             <!-- Step 2 -->
             <div class="relative z-10 flex flex-col items-center text-center group">
-                <div class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
+                <div
+                    class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
                     <i data-feather="package" class="h-10 w-10"></i>
                 </div>
-                <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">2</div>
+                <div
+                    class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">
+                    2</div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">Secure Pickup</h4>
-                <p class="text-slate-500 text-sm leading-relaxed">Our local experts handle packing, pickup, and customs clearance with zero hassle on your end.</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Our local experts handle packing, pickup, and customs
+                    clearance with zero hassle on your end.</p>
             </div>
 
             <!-- Step 3 -->
             <div class="relative z-10 flex flex-col items-center text-center group">
-                <div class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
+                <div
+                    class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
                     <i data-feather="activity" class="h-10 w-10"></i>
                 </div>
-                <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">3</div>
+                <div
+                    class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">
+                    3</div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">Real-Time Transit</h4>
-                <p class="text-slate-500 text-sm leading-relaxed">Monitor your shipment 24/7 across our global network through your dedicated dashboard.</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Monitor your shipment 24/7 across our global network
+                    through your dedicated dashboard.</p>
             </div>
 
             <!-- Step 4 -->
             <div class="relative z-10 flex flex-col items-center text-center group">
-                <div class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
+                <div
+                    class="w-24 h-24 rounded-full bg-white border-4 border-indigo-50 shadow-xl flex items-center justify-center mb-6 group-hover:border-indigo-200 transition-colors duration-300 text-indigo-600">
                     <i data-feather="check-circle" class="h-10 w-10"></i>
                 </div>
-                <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">4</div>
+                <div
+                    class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm absolute top-0 right-1/4 translate-x-1/2 -translate-y-2 border-2 border-white shadow-sm">
+                    4</div>
                 <h4 class="text-xl font-bold text-slate-900 mb-3">Safe Delivery</h4>
-                <p class="text-slate-500 text-sm leading-relaxed">Your cargo arrives exactly when it's supposed to, signed and secured at its final destination.</p>
+                <p class="text-slate-500 text-sm leading-relaxed">Your cargo arrives exactly when it's supposed to,
+                    signed and secured at its final destination.</p>
             </div>
         </div>
     </div>
@@ -175,15 +210,19 @@
 <!-- Core Services Section -->
 <section class="py-24 bg-slate-50 relative overflow-hidden">
     <!-- Decorative Blob -->
-    <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[500px] h-[500px] bg-indigo-200/40 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
-    
+    <div
+        class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[500px] h-[500px] bg-indigo-200/40 rounded-full blur-[100px] -z-10 pointer-events-none">
+    </div>
+
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div class="max-w-2xl animate-fade-in">
                 <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">Solutions</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Premium Fleet & Services</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Premium Fleet & Services
+                </h2>
             </div>
-            <a href="{{ route('services') }}" class="hidden md:inline-flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 hover:text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:border-indigo-200 hover:shadow-md transition-all duration-300">
+            <a href="{{ route('services') }}"
+                class="hidden md:inline-flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 hover:text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:border-indigo-200 hover:shadow-md transition-all duration-300">
                 <span>View All Services</span>
                 <i data-feather="arrow-right" class="h-4 w-4"></i>
             </a>
@@ -191,25 +230,32 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Service 1 -->
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
                 <div class="h-60 overflow-hidden relative">
-                    <img src="images/air.jpg" alt="Air Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
+                    <img src="images/air.jpg" alt="Air Freight"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent">
+                    </div>
                     <div class="absolute bottom-6 left-6 right-6">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Fastest</span>
+                        <span
+                            class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Fastest</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Air Freight</h3>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
-                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">When time is critical, our global air network provides unmatched speed, priority boarding, and precise tracking.</p>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">When time is critical, our global air network
+                        provides unmatched speed, priority boarding, and precise tracking.</p>
                     <div class="flex items-center justify-between pt-6 border-t border-slate-100 mt-auto">
                         <div class="flex items-center gap-2 text-sm font-semibold text-slate-900">
-                            <div class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
+                            <div
+                                class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
                                 <i data-feather="clock" class="h-4 w-4"></i>
                             </div>
                             1-3 Days
                         </div>
-                        <a href="{{ route('services') }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
+                        <a href="{{ route('services') }}"
+                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
                             <i data-feather="arrow-right" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -217,25 +263,32 @@
             </div>
 
             <!-- Service 2 -->
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col mt-0 md:mt-8 relative">
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col mt-0 md:mt-8 relative">
                 <div class="h-60 overflow-hidden relative">
-                    <img src="images/ocean.jpg" alt="Ocean Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
+                    <img src="images/ocean.jpg" alt="Ocean Freight"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent">
+                    </div>
                     <div class="absolute bottom-6 left-6 right-6">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Economical</span>
+                        <span
+                            class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Economical</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Ocean Freight</h3>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
-                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">Cost-effective FCL and LCL ocean freight solutions tailored for your large-volume international supply chains.</p>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">Cost-effective FCL and LCL ocean freight
+                        solutions tailored for your large-volume international supply chains.</p>
                     <div class="flex items-center justify-between pt-6 border-t border-slate-100 mt-auto">
                         <div class="flex items-center gap-2 text-sm font-semibold text-slate-900">
-                            <div class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
+                            <div
+                                class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
                                 <i data-feather="anchor" class="h-4 w-4"></i>
                             </div>
                             15-45 Days
                         </div>
-                        <a href="{{ route('services') }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
+                        <a href="{{ route('services') }}"
+                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
                             <i data-feather="arrow-right" class="h-5 w-5"></i>
                         </a>
                     </div>
@@ -243,34 +296,42 @@
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2 group border border-slate-100 flex flex-col">
                 <div class="h-60 overflow-hidden relative">
-                    <img src="images/road.jpg" alt="Road Freight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
-                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent"></div>
+                    <img src="images/road.jpg" alt="Road Freight"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-indigo-900/20 to-transparent">
+                    </div>
                     <div class="absolute bottom-6 left-6 right-6">
-                        <span class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Flexible</span>
+                        <span
+                            class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-xs font-bold tracking-wider uppercase mb-3 inline-block">Flexible</span>
                         <h3 class="text-3xl font-bold text-white tracking-tight">Road Freight</h3>
                     </div>
                 </div>
                 <div class="p-8 flex-1 flex flex-col">
-                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">Highly reliable and fully tracked domestic and cross-border road transport bridging regional hubs to your door.</p>
+                    <p class="text-slate-600 mb-6 leading-relaxed flex-1">Highly reliable and fully tracked domestic and
+                        cross-border road transport bridging regional hubs to your door.</p>
                     <div class="flex items-center justify-between pt-6 border-t border-slate-100 mt-auto">
                         <div class="flex items-center gap-2 text-sm font-semibold text-slate-900">
-                            <div class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
+                            <div
+                                class="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600">
                                 <i data-feather="truck" class="h-4 w-4"></i>
                             </div>
                             1-7 Days
                         </div>
-                        <a href="{{ route('services') }}" class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
+                        <a href="{{ route('services') }}"
+                            class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white text-slate-400 transition-colors duration-300">
                             <i data-feather="arrow-right" class="h-5 w-5"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="mt-12 text-center md:hidden">
-            <a href="{{ route('services') }}" class="inline-flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 hover:text-indigo-600 px-6 py-3 rounded-xl font-semibold w-full justify-center shadow-sm">
+            <a href="{{ route('services') }}"
+                class="inline-flex items-center space-x-2 bg-white border border-slate-200 text-slate-700 hover:text-indigo-600 px-6 py-3 rounded-xl font-semibold w-full justify-center shadow-sm">
                 <span>View All Services</span>
                 <i data-feather="arrow-right" class="h-4 w-4"></i>
             </a>
@@ -281,70 +342,87 @@
 <!-- NEW: Why Choose Us (Tech/Premium Focus) -->
 <section class="py-24 bg-indigo-50 text-slate-900 relative overflow-hidden">
     <!-- Dark particles/grid pattern could go here, for now a subtle radial gradient -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-100/40 via-indigo-50 to-indigo-50 -z-10"></div>
-    
+    <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-100/40 via-indigo-50 to-indigo-50 -z-10">
+    </div>
+
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">The Prime Advantage</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Engineered for absolute reliability.</h2>
+                <span class="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">The Prime
+                    Advantage</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Engineered for
+                    absolute reliability.</h2>
                 <p class="text-slate-600 text-lg leading-relaxed mb-10">
-                    We combine military-grade security protocols with an AI-driven routing engine to guarantee your shipments are protected, optimized, and delivered on schedule, every single time.
+                    We combine military-grade security protocols with an AI-driven routing engine to guarantee your
+                    shipments are protected, optimized, and delivered on schedule, every single time.
                 </p>
-                
+
                 <div class="space-y-8">
                     <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-indigo-100 flex items-center justify-center text-indigo-600 shadow-lg">
+                        <div
+                            class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-indigo-100 flex items-center justify-center text-indigo-600 shadow-lg">
                             <i data-feather="cpu" class="h-7 w-7"></i>
                         </div>
                         <div>
                             <h4 class="text-xl font-bold text-slate-900 mb-2">Smart Route Optimization</h4>
-                            <p class="text-slate-600 leading-relaxed text-sm">Our proprietary algorithms analyze weather, traffic, and customs delays to dynamically reroute cargo for maximum speed.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-emerald-100 flex items-center justify-center text-emerald-600 shadow-lg">
-                            <i data-feather="shield" class="h-7 w-7"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold text-slate-900 mb-2">Impenetrable Security</h4>
-                            <p class="text-slate-600 leading-relaxed text-sm">24/7 armed escorts for high-value goods, GPS-tamper alerts, and comprehensive insurance coverage.</p>
+                            <p class="text-slate-600 leading-relaxed text-sm">Our proprietary algorithms analyze
+                                weather, traffic, and customs delays to dynamically reroute cargo for maximum speed.</p>
                         </div>
                     </div>
 
                     <div class="flex gap-5">
-                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-cyan-100 flex items-center justify-center text-cyan-600 shadow-lg">
+                        <div
+                            class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-emerald-100 flex items-center justify-center text-emerald-600 shadow-lg">
+                            <i data-feather="shield" class="h-7 w-7"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900 mb-2">Impenetrable Security</h4>
+                            <p class="text-slate-600 leading-relaxed text-sm">24/7 armed escorts for high-value goods,
+                                GPS-tamper alerts, and comprehensive insurance coverage.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5">
+                        <div
+                            class="shrink-0 w-14 h-14 rounded-2xl bg-white border border-cyan-100 flex items-center justify-center text-cyan-600 shadow-lg">
                             <i data-feather="headphones" class="h-7 w-7"></i>
                         </div>
                         <div>
                             <h4 class="text-xl font-bold text-slate-900 mb-2">Dedicated Concierge</h4>
-                            <p class="text-slate-600 leading-relaxed text-sm">Forget automated bots. You get a dedicated logistics expert assigned to your account available around the clock.</p>
+                            <p class="text-slate-600 leading-relaxed text-sm">Forget automated bots. You get a dedicated
+                                logistics expert assigned to your account available around the clock.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden border border-indigo-100 shadow-2xl relative z-10 bg-white">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Warehouse Tech" class="w-full h-auto opacity-90">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Warehouse Tech" class="w-full h-auto opacity-90">
                     <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent opacity-80"></div>
-                    
+
                     <!-- Tech overlay elements -->
-                    <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-xl border border-indigo-100 rounded-2xl p-6 shadow-xl">
+                    <div
+                        class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-xl border border-indigo-100 rounded-2xl p-6 shadow-xl">
                         <div class="flex justify-between items-center mb-4">
                             <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">System Status</span>
-                            <span class="flex items-center gap-2 text-xs font-bold text-emerald-600"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Optimal</span>
+                            <span class="flex items-center gap-2 text-xs font-bold text-emerald-600"><span
+                                    class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Optimal</span>
                         </div>
                         <div class="w-full bg-slate-100 rounded-full h-2 mb-2 border border-slate-200">
-                            <div class="bg-indigo-500 h-2 rounded-full w-[94%]" style="transition: width 1s ease-in-out;"></div>
+                            <div class="bg-indigo-500 h-2 rounded-full w-[94%]"
+                                style="transition: width 1s ease-in-out;"></div>
                         </div>
                         <p class="text-xs text-slate-500 text-right">94% Fleet Active</p>
                     </div>
                 </div>
-                
+
                 <!-- Decorative glow -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-indigo-500/20 blur-[100px] rounded-full -z-0 pointer-events-none"></div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-indigo-500/20 blur-[100px] rounded-full -z-0 pointer-events-none">
+                </div>
             </div>
         </div>
     </div>
@@ -353,18 +431,26 @@
 <!-- Modern CTA Section -->
 <section class="py-24 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-indigo-600 rounded-[2.5rem] p-10 md:p-16 text-center shadow-2xl shadow-indigo-600/30 relative overflow-hidden isolate">
+        <div
+            class="bg-indigo-600 rounded-[2.5rem] p-10 md:p-16 text-center shadow-2xl shadow-indigo-600/30 relative overflow-hidden isolate">
             <!-- Background Patterns -->
-            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 -z-10 mix-blend-screen"></div>
-            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-400 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 -z-10 mix-blend-screen opacity-50"></div>
-            
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 -z-10 mix-blend-screen">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-400 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 -z-10 mix-blend-screen opacity-50">
+            </div>
+
             <div class="max-w-3xl mx-auto relative z-10">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-white font-medium text-sm mb-6 border border-white/30 backdrop-blur-md">
+                <span
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-white font-medium text-sm mb-6 border border-white/30 backdrop-blur-md">
                     <i data-feather="zap" class="h-4 w-4 text-white"></i> Fast Onboarding
                 </span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Ready to Ship with Confidence?</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Ready to Ship with
+                    Confidence?</h2>
                 <p class="text-xl text-indigo-100 mb-10 font-light leading-relaxed">
-                    Join thousands of modern businesses that trust Prime Flow Delivery. Get an instant competitive quote customized for your cargo today.
+                    Join thousands of modern businesses that trust Prime Flow Delivery. Get an instant competitive quote
+                    customized for your cargo today.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-5">
                     <a href="{{ route('contact') }}#quote-form"
@@ -544,4 +630,17 @@
         });
     });
 </script>
+
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'cb82cf293e40cba715d38273f13da0e3aaaceeed';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
 @endpush
